@@ -1,0 +1,27 @@
+---
+MainSourceFile:  '/home/crimsongnome/Desktop/lab-03-crimsonGnome/prob05/calculate_avg.cc'
+Diagnostics:
+  - DiagnosticName:  clang-analyzer-core.uninitialized.Assign
+    DiagnosticMessage:
+      Message:         The left expression of the compound assignment is an uninitialized value. The computed value will also be garbage
+      FilePath:        calculate_avg.cc
+      FileOffset:      352
+      Replacements:    []
+    Notes:
+      - Message:         '''average'' declared without an initial value'
+        FilePath:        calculate_avg.cc
+        FileOffset:      213
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''amountOfStudents'''
+        FilePath:        calculate_avg.cc
+        FileOffset:      312
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        calculate_avg.cc
+        FileOffset:      290
+        Replacements:    []
+      - Message:         The left expression of the compound assignment is an uninitialized value. The computed value will also be garbage
+        FilePath:        calculate_avg.cc
+        FileOffset:      352
+        Replacements:    []
+...
